@@ -2,6 +2,8 @@
 
 #include <time.h>
 
+#include <stdio.h>
+
 /**
  * main - Print the last digit
  * Return: Always (Success)
