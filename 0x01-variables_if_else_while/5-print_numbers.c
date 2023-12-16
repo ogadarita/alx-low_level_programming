@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <time.h>
 
 /**
- * main - Print numbers
+ * main - Program that prints numbers
  * Return: Always 0 (Success)
  */
 
@@ -19,4 +17,3 @@ int main(void)
 
 	return (0);
 }
-	
