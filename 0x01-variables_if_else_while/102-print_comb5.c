@@ -3,34 +3,29 @@
 #include <time.h>
 
 /**
- * main - Print combinations of two two-digit numbers
+ * main - Print all possible combinations of two two-digit numbers
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int d, p, q;
+	int p, q;
 
-	for (d = '0'; d < '9'; d++)
+	for (p = 0; p <= 98; p++)
 	{
-	for (p = d + 1; p <= '9'; p++)
+
+	for (q = p + 1; q <= 99; q++)
 	{
-	
-	for (q = p + 1; q <= '9'; q++)
-	{
-	if ((p != d) !=q)
-	{
-	putchar(d);
-	putchar(p);
-	putchar(q);
-	if (d == '7' && p == '8')
+	putchar((p / 10) + '0');
+	putchar((p % 10) + '0');
+	putchar(' ');
+	putchar((q / 10) + '0');
+	putchar((q % 10) + '0');
+	if (p == 98 && q == 99)
 	continue;
 	putchar(',');
 	putchar(' ');
 	}
 	}
-	}
-	}
-	putchar('\n');
 	return (0);
 }
