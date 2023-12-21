@@ -25,12 +25,22 @@ void print_times_table(int n)
 			{
 				printf("%d, ", result);
 			}
-			else
+			else if (b > 0 || b < 10)
 			{
-				printf("%4d", result);
-				if (b != n)
-				printf(", ");
+				printf("%3d, ", result);
 			}
+			else if (b >= 10 || b < 100)
+			{
+				printf("%3d, ", result);
+			}
+			else if (b >= 100 || b < 1000)
+			{
+				printf("%4d,", result);
+			}
+			else if (b == n)
+			{
+				printf("%d", result);
+		
 		}
 		printf("\n");
 	}
