@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 
-/*
+/**
 * _strncpy - Function that copies up to n characters from dest to src
 * @dest: destination string
 * @src: source string
