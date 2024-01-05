@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /*
-* _strncpy - a function that copies a string
+* _strncpy - Function that copies up to n characters from dest to src
 * @dest: destination string
 * @src: source string
 * @n: number of bytes
