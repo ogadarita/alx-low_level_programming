@@ -13,4 +13,5 @@ int _putchar(char c);
 int is_palindrome(char *s);
 int is_palindrome_helper(char *s, int start, int end);
 int wildcmp(char *s1, char *s2);
+int wildcmp_helper(char *s1, char *s2);
 #endif
