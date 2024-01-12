@@ -5,7 +5,7 @@
 * main - prints number of coins to make change for an amount of money
 * @argc: argumentt count
 * @argv: argument vector
-* Return: 0
+* Return: 0 (Success), 1 (Error)
 */
 
 int main(int argc, char *argv[])
