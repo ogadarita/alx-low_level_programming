@@ -18,5 +18,6 @@ The Tasks in this project include:
 
 ### Advanced Tasks
 These are optional tasks in this project. They include:
-5. 100-realloc.c - Writing a function that reallocates a memory block using `malloc` and `free`
-6. 101-mul.c - Writing a program that multiplies two positive numbers
+
+1. 100-realloc.c - Writing a function that reallocates a memory block using `malloc` and `free`
+2. 101-mul.c - Writing a program that multiplies two positive numbers
