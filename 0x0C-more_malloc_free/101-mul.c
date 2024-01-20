@@ -45,11 +45,14 @@ void multiply(char *num1, char *num2)
 		result[i] = 0;
 
 	for (i = len1 - 1; i >= 0; i--)
+	{
 		for (j = len2 - 1; j >= 0; j--)
+		{
 			result[i + j + 1] += (num1[i] - '0') * (num2[j] - '0');
 			result[i + j] += result[i + j + 1] / 10;
 			result[i + j + 1] %= 10;
-
+		}
+	}
 	while (start < len1 + len2 && result[start] == 0)
 		start++;
 
@@ -57,11 +60,13 @@ void multiply(char *num1, char *num2)
 		printf("0\n");
 
 	else
+	{
 		for (i = start; i < len1 + len2; i++)
 		{
 			printf("%d", result[i]);
 		}
 		printf("\n");
+	}
 	free(result);
 }
 
