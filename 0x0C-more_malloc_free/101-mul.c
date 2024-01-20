@@ -81,13 +81,13 @@ int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
-		fprintf(stderr, "Error\n");
+		printf("Error\n");
 		return (98);
 	}
 
 	if (!isNumeric(argv[1]) || !isNumeric(argv[2]))
 	{
-		fprintf(stderr, "Error\n");
+		printf("Error\n");
 		return (98);
 	}
 	mul(argv[1], argv[2]);
