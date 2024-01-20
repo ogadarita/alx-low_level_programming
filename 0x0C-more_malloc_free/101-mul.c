@@ -21,13 +21,13 @@ int isNumeric(const char *str)
 }
 
 /**
-* multiply - function to multiply two positive numbers
+* mul - function to multiply two positive numbers
 * @num1: first number
 * @num2: second number
 * Return: void
 */
 
-void multiply(char *num1, char *num2)
+void mul(char *num1, char *num2)
 {
 	int len1 = 0, len2 = 0, i, j;
 	int *result;
@@ -90,6 +90,6 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error\n");
 		return (98);
 	}
-	multiply(argv[1], argv[2]);
+	mul(argv[1], argv[2]);
 	return (0);
 }
