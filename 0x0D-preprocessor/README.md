@@ -30,8 +30,7 @@ They are identified by the presence of the # symbol, usually defined as preproce
 
 1-pi.h - a headerfile that defines a macro `PI` as an abbreviation of the token `3.14159...`.
 
-2-main.c - a program that prints the name of the file it was compiled from
-`
+2-main.c - a program that prints the name of the file it was compiled from.
 
 3-function_like_macro.h - a function-like macro `ABS(x)` that computes tje absolute value of a number `x`. 
 
