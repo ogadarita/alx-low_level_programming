@@ -36,7 +36,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 		return (NULL);
 	}
-	printf("Error: Cannot allocate memory for new_dog\n");
 
 	return (new_dog);
 }
