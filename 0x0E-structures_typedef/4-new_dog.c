@@ -20,22 +20,25 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		new_dog->name = (char *)malloc(strlen(name) + 1);
 		new_dog->owner = (char *)malloc(strlen(owner) + 1);
-	}
-	if (new_dog->name != NULL && new_dog->owner != NULL)
-	{
-		strcpy(new_dog->name, name);
-		strcpy(new_dog->owner, owner);
-		new_dog->age = age;
+
+		if (new_dog->name != NULL && new_dog->owner != NULL)
+		{
+			strcpy(new_dog->name, name);
+			strcpy(new_dog->owner, owner);
+			new_dog->age = age;
+		}
+		else
+		{
+			printf("Error: Cannot allocate memory for new_dog name or owner\n");
+			free(new_dog->name);
+			free(new_dog->owner);
+			free(new_dog);
+		}
 	}
 	else
 	{
-		printf("Error: Cannot allocate memory for new_dog name or owner\n");
-		free(new_dog->name);
-		free(new_dog->owner);
-		free(new_dog);
-
+		printf("Error: cannot allocate memory to new_dog.\n");
 		return (NULL);
 	}
-
 	return (new_dog);
 }
