@@ -5,10 +5,10 @@ Function pointers are variables that hold the addresses of functions. They act l
 Function pointers allow you to store the address of a function and call that function indirectly through the pointer. <br>
 This meamsn you can decide at runtime which function to call based on certain conditions.
 ## How Are They Declared?
-A function pointer declaration looks something like this:<br>
+A function pointer declaration looks something like this:<br\>
 `returnType (*pointerName)(parameters);`
 <br\>
-* `returnType` is the type of value the function returns (like `int`, `void`, etc)<br>
+* `returnType` is the type of value the function returns (like `int`, `void`, etc)<br\>
 * `pointerName` is the name of your function pointer<br>
 * `parameters` are the types of arguments the function takes
 ## How Do We Use Them?
