@@ -10,32 +10,30 @@ Linked lists have several advantages, including dynamic memory allocation, effic
 
 ### Operations Implemented:
 
-1. **Print All Elements**
+1. **0-print_list.c - Print All Elements**
    - Function: `void print_list(list_t *list);`
    - Description: Prints all the elements present in the given `list_t` linked list.
 
-2. **Count Elements**
+2. **1-list_len.c - Count Elements**
    - Function: `size_t list_len(const list_t *list);`
    - Description: Returns the number of elements present in the given `list_t` linked list.
 
-3. **Add Node at Beginning**
+3. **2-add_node.c - Add Node at Beginning**
    - Function: `list_t *add_node(list_t **head, const char *str);`
    - Description: Adds a new node with the given string at the beginning of the `list_t` linked list.
 
-4. **Add Node at End**
+4. **3-add_node_end.c - Add Node at End**
    - Function: `list_t *add_node_end(list_t **head, const char *str);`
    - Description: Adds a new node with the given string at the end of the `list_t` linked list.
 
-5. **Free List**
+5. **4-free_list.c - Free List**
    - Function: `void free_list(list_t *head);`
    - Description: Frees the memory occupied by all the elements of the `list_t` linked list.
 
-6. **Pre-main Execution Message**
+6. **100-first.c - Pre-main Execution Message**
    - Function: `void __attribute__((constructor)) pre_main();`
    - Description: Prints the message "You're beat! and yet, you must allow,\nI bore my house upon my back!\n" before the execution of the main function.
 
-7. **Assembly Program**
+7. **101-hello_holberton.asm - Assembly Program**
    - File: `hello_holberton.asm`
    - Description: A 64-bit program written in assembly that prints "Hello, Holberton," followed by a new line.
-
-Feel free to explore the source code for detailed implementation and usage instructions.
