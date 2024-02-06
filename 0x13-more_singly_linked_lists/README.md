@@ -51,4 +51,4 @@ This repository contains C code for implementing singly linked lists along with 
 
 ## Contributions:
 
-Contributions to this repository are welcome! If you find any issues or have suggestions for improvements, feel free to create a pull request or open an issue.
+Contributions to this repository are welcome. If you find any issues or have suggestions for improvements, feel free to create a pull request or open an issue.
