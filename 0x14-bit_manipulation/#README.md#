@@ -1,0 +1,77 @@
+# Bit Manipulation in C
+
+This repository contains a set of C functions demonstrating the practical use of bit manipulation. The functions are designed to enhance understanding binary representations of numbers, set or clear individual bits, and perform other bitwise operations.
+
+## Functions Included
+
+1. **`binary_to_uint`**: This function converts a binary number represented as a string to an unsigned int.
+
+    ```c
+        unsigned int binary_to_uint(const char *b);
+	    ```
+
+2. **`print_binary`**: This function prints the binary representation of a given unsigned long int.
+
+    ```c
+        void print_binary(unsigned long int n);
+	    ```
+
+3. **`get_bit`**: This function returns the value of a bit at a given index in an unsigned long int.
+
+    ```c
+        int get_bit(unsigned long int n, unsigned int index);
+	    ```
+
+4. **`set_bit`**: This function sets the value of a bit to 1 at a given index in an unsigned long int.
+
+    ```c
+        int set_bit(unsigned long int *n, unsigned int index);
+	    ```
+
+5. **`clear_bit`**: This function sets the value of a bit to 0 at a given index in an unsigned long int.
+
+    ```c
+        int clear_bit(unsigned long int *n, unsigned int index);
+	    ```
+
+6. **`flip_bits`**: This function returns the number of bits needed to be flipped to get from one number to another.
+
+    ```c
+        unsigned int flip_bits(unsigned long int n, unsigned long int m);
+	    ```
+
+7. **`get_endianness`**: This function checks the endianness of the system.
+
+    ```c
+        int get_endianness(void);
+	    ```
+
+8. **`101-password`**: Find the password for this program and save it in the file `101-password`.
+
+## How to Use
+
+Clone the repository to your local machine and include the desired functions in your C programs. Make sure to include the header file containing the function prototypes.
+
+For example:
+
+```c
+#include "bit_manipulation.h"
+
+int main(void) {
+    unsigned long int num = 98;
+        print_binary(num);
+	    return (0);
+	    }
+	    ```
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions, improvements, or additional functions to add, feel free to open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Happy Bit Manipulating! 🚀
