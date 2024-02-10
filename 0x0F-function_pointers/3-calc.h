@@ -14,22 +14,6 @@ typedef struct op
 	int (*f)(int a, int b);
 } op_t;
 
-/**
-* op_t - Struct op
-* @i: The operator
-*/
-
-op_t ops[] = 
-{
-	{"+", op_add},
-	{"-", op_sub},
-	{"*", op_mul},
-	{"/", op_div},
-	{"%", op_mod},
-	{NULL, NULL}
-};
-int i;
-
 int op_add(int a, int b);
 int op_sub(int a, int b);
 int op_mul(int a, int b);
