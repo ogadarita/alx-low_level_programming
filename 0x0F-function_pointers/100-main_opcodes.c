@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+* main - Entry point
+* @argc: number of arguments
+* @argv: array of arguments
+* Return: 0 (Success), 1 if argc is not 2, 2 if num_bytes is negative
+*/
+
 int main(int argc, char *argv[])
 {
 	if (argc != 2)
@@ -10,6 +17,7 @@ int main(int argc, char *argv[])
 	}
 
 	int num_bytes = atoi(argv[1]);
+
 	if (num_bytes < 0)
 	{
 		printf("Error\n");
