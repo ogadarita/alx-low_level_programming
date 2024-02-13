@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <unistd.h>
 #include <stdlib.h>
 
 /**
@@ -24,6 +25,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	buffer  = malloc(sizeof(char) * (letters + 1));
 	if (buffer == NULL)
+	{
+		fclose(file);
+		return (0);
+	}
+
+	bytes_read = fread(buffer, sizeof(char), letters, file);
+	if (bytes_read == 0)
 	{
 		fclose(file);
 		free(buffer);
